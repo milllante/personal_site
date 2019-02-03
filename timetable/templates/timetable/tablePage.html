@@ -1,0 +1,71 @@
+{% extends "mainApp/wrapper.html" %}
+{% load staticfiles %}
+
+{% block content %}
+<div class="container fon">
+ <h1><font color="white"><br>Расписание уроков<br><br></font></h1>
+</div>
+<br><br>
+
+<div class="container">
+<div class="row">
+    <div class="col-md-6">
+      <table class="table table-border table-hover text-center">
+       <thead>
+        <tr><th><h2 style="font-family: Chalk_cyrillic_freehand">{{object_list.0.title}}</h2></th></tr>
+       </thead>
+       <tbody>
+       <tr><td><h5>{{object_list.0.less|safe|linebreaks}}</h5></td></tr>
+       </tbody>
+     </table>
+
+        <table class="table table-border table-hover text-center">
+       <thead>
+        <tr><th><h2 style="font-family: Chalk_cyrillic_freehand">{{object_list.1.title}}</h2></th></tr>
+       </thead>
+       <tbody>
+       <tr><td><h5>{{object_list.1.less|safe|linebreaks}}</h5></td></tr>
+       </tbody>
+     </table>
+
+        <table class="table table-border table-hover text-center">
+       <thead>
+        <tr><th><h2 style="font-family: Chalk_cyrillic_freehand">{{object_list.2.title}}</h2></th></tr>
+       </thead>
+       <tbody>
+       <tr><td><h5>{{object_list.2.less|safe|linebreaks}}</h5></td></tr>
+       </tbody>
+     </table>
+    </div>
+
+ <div class="col-md-6">
+      <table class="table table-border table-hover text-center">
+       <thead>
+        <tr><th><h2 style="font-family: Chalk_cyrillic_freehand">{{object_list.3.title}}</h2></th></tr>
+       </thead>
+       <tbody>
+       <tr><td><h5>{{object_list.3.less|safe|linebreaks}}</h5></td></tr>
+       </tbody>
+     </table>
+
+     <table class="table table-border table-hover text-center">
+       <thead>
+        <tr><th><h2 style="font-family: Chalk_cyrillic_freehand">{{object_list.4.title}}</h2></th></tr>
+       </thead>
+       <tbody>
+       <tr><td><h5>{{object_list.4.less|safe|linebreaks}}</h5></td></tr>
+       </tbody>
+     </table>
+ </div>
+
+
+<div class="container">
+  <div class="text-center">
+    <a href="#" class="center"><img src="{% static 'mainApp/image/marking.png' %}" style='max-width:20%; height:auto;' class="center"></a>
+  </div>
+    <br>
+</div>
+</div>
+</div>
+
+{% endblock %}

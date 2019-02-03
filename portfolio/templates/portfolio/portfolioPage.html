@@ -1,0 +1,26 @@
+{% extends "mainApp/wrapper.html" %}
+{% load staticfiles %}
+
+{% block content %}
+<div class="container fon">
+ <h1><font color="white"><br>Мое портфолио<br><br></font></h1>
+</div>
+<br><br>
+  {% for post in object_list %}
+        <div class="container">
+        <table class="table table-border table-hover">
+               <thead>
+                <tr><th style="text-align:center">
+                    <h4>{{post.title}}</h4>
+                </th></tr>
+               </thead>
+
+               <tbody>
+               <tr><td><p class="text-justify">{{post.text|safe|linebreaks}}</p><br><br><br></td></tr>
+               </tbody>
+             </table>
+        </div>
+
+  {% endfor %}
+
+{% endblock %}

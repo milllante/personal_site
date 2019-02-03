@@ -1,0 +1,36 @@
+{% extends "mainApp/wrapper.html" %}
+{% load staticfiles %}
+
+{% block content %}
+<div class="container fon">
+ <h1><font color="white"><br>Полезная информация<br><br></font></h1>
+</div>
+<br><br>
+
+  {% for post in object_list %}
+<div class="container">
+<table class="table table-border table-hover">
+       <thead>
+        <tr><th style="text-align:center">
+            <div class="row">
+                <div class="col-4"><img src="{% static 'mainApp/image/list.png' %}" style='max-width:15%; height:auto'></div>
+                <div class="col-4">
+                <h2 style="font-family: Chalk_cyrillic_freehand">{{post.title}}</h2></div>
+                <div class="col-4"></div>
+            </div></th></tr>
+
+       </thead>
+       <tbody>
+       <tr><td><h5 class="text-justify">{{post.less|safe|linebreaks}}</h5><br><br><br></td></tr>
+       </tbody>
+     </table>
+</div>
+  {% endfor %}
+<div class="container">
+  <div class="text-center">
+    <a href="#" class="center"><img src="{% static 'mainApp/image/pencil.png' %}" style='max-width:50%; height:auto;' class="center"></a>
+  </div>
+    <br>
+</div>
+{% endblock %}
+
