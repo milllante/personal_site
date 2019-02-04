@@ -7,10 +7,12 @@
 </div>
 <br><br>
   {% for post in object_list %}
-        <h4>{{post.title}}</h4>
-        <p class="text-justify">{{post.site}}</p><br>
-        <a href="{{post.site}}"></a>
-
+        <h6>{{post.title}}</h6>
+        <a href="{{post.link}}"><i>{{post.link}}</i></a><hr><br>
   {% endfor %}
+<div>
+    <a href="#" class="center"><img src="{% static 'mainApp/image/sit.png' %}" style='max-width:70%; height:auto;'></a>
+    <br>
+</div>
 
 {% endblock %}

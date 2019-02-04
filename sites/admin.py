@@ -1,4 +1,4 @@
 from django.contrib import admin
-from sites.models import Sites
+from sites.models import Site
 
-admin.site.register(Sites)
+admin.site.register(Site)
