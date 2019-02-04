@@ -1,0 +1,16 @@
+{% extends "mainApp/wrapper.html" %}
+{% load staticfiles %}
+
+{% block content %}
+<div class="container fon">
+ <h1><font color="white"><br>Полезные сайты для изучения английского языка<br><br></font></h1>
+</div>
+<br><br>
+  {% for post in object_list %}
+        <h4>{{post.title}}</h4>
+        <p class="text-justify">{{post.site}}</p><br>
+        <a href="{{post.site}}"></a>
+
+  {% endfor %}
+
+{% endblock %}

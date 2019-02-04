@@ -23,4 +23,5 @@ urlpatterns = [
     url(r'^timetable/', include('timetable.urls')),
     url(r'^directory/', include('directory.urls')),
     url(r'^parents/', include('parents.urls')),
+    url(r'^sites/', include('sites.urls')),
 ]
