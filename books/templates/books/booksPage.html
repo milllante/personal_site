@@ -1,0 +1,19 @@
+{% extends "mainApp/wrapper.html" %}
+{% load staticfiles %}
+
+{% block content %}
+<div class="container fon">
+ <h1><font color="white"><br>Методическая литература<br><br></font></h1>
+</div>
+<br><br><br>
+<div class="container left">
+
+    {% for specificat in object_list %}
+       <a href="/books/{{specificat.id}}"><h4>{{specificat.title}}</h4></a>
+       <hr>
+    {% endfor %}
+</div>
+<br><br><br>
+
+<a href="#" class="center"><img src="{% static 'mainApp/image/books190.jpg' %}" style='max-width:100%; height:auto;' class="center"></a>
+{% endblock %}
