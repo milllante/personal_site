@@ -1,6 +1,6 @@
 *.pyc
 *~
-*settings.py
+*myblog/settings.py
 __pycache__
 myvenv
 db.sqlite3
