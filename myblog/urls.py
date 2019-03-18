@@ -26,5 +26,6 @@ urlpatterns = [
     url(r'^parents/', include('parents.urls')),
     url(r'^sites/', include('sites.urls')),
     url(r'^books/', include('books.urls')),
+    url(r'^link/', include('link.urls')),
 ]
 

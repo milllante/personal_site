@@ -31,6 +31,7 @@ ALLOWED_HOSTS = ["elenaohota.pythonanywhere.com"]
 # Application definition
 
 INSTALLED_APPS = [
+    'link',
     'books',
     'sites',
     'parents',

@@ -1,0 +1,18 @@
+{% extends "mainApp/wrapper.html" %}
+{% load staticfiles %}
+
+{% block content %}
+<div class="container fon">
+ <h1><font color="white"><br>Полезные сайты<br><br></font></h1>
+</div>
+<br><br>
+  {% for post in object_list %}
+        <h6>{{post.title}}</h6>
+        <a href="{{post.link}}"><i>{{post.link}}</i></a><hr><br>
+  {% endfor %}
+<div>
+    <a href="#" class="center"><img src="{% static 'mainApp/image/sit.png' %}" style='max-width:70%; height:auto;'></a>
+    <br>
+</div>
+
+{% endblock %}
