@@ -1,0 +1,18 @@
+{% extends "mainApp/wrapper.html" %}
+{% load staticfiles %}
+
+{% block content %}
+<div class="container fon">
+ <h1><font color="white"><br>Диплом<br><br></font></h1>
+</div>
+<br><br>
+
+    <div><img src="{% static 'mainApp/image/portfolio2.jpg' %}" style='max-width:100%; height:auto; display:block' alt="Responsive image" class="img-responsive img-rounded"></div>
+    <div><img src="{% static 'mainApp/image/portfolio3.jpg' %}" style='max-width:100%; height:auto; display:block' alt="Responsive image" class="img-responsive img-rounded"></div>
+
+<a href="/portfolio" type="button" class="btn btn-outline-primary">Назад</a>
+<br><hr>
+
+<br><br><br>
+
+{% endblock %}
