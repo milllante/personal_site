@@ -20,7 +20,6 @@ from django.conf.urls import url, include
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', include('mainApp.urls')),
-    url(r'^portfolio/', include('portfolio.urls')),
     url(r'^timetable/', include('timetable.urls')),
     url(r'^directory/', include('directory.urls')),
     url(r'^parents/', include('parents.urls')),
@@ -28,5 +27,8 @@ urlpatterns = [
     url(r'^books/', include('books.urls')),
     url(r'^link/', include('link.urls')),
     url(r'^diploma/', include('diploma.urls')),
+    url(r'^portfolio2/', include('portfolio2.urls')),
+    url(r'^contact/', include('contact.urls')),
+    url(r'^portfolio/', include('portfolio.urls')),
 ]
 

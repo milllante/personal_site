@@ -1,0 +1,26 @@
+{% extends "mainApp/wrapper.html" %}
+{% load staticfiles %}
+
+{% block content %}
+<div class="container fon">
+ <h1><font color="white"><br>Мои контакты<br><br></font></h1>
+</div>
+<br>
+<div class="container padding">
+ <div class="row">
+  <div class="col-md-4">
+   <div class="text-center">
+    <a href="#" class="center"><img src="{% static 'mainApp/image/communication-1809935_1280.png' %}" style='max-width:80%; height:auto;' class="center"></a>
+  </div>
+  </div>
+  <div class="col-md-8">
+   <br><p>По всем вопросам или предложениям свяжитесь со мной по электронной почте и я обязательно Вам отвечу в ближайшее время.</p>
+   <p><a href="mailto:elena.ohota@yandex.ua?subject=English">elena.ohota@yandex.ua</a></p>
+  </div>
+ </div>
+
+<br><br><br>
+</div>
+
+
+{% endblock %}

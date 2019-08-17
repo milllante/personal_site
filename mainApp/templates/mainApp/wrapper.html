@@ -27,6 +27,10 @@
         background-image: url({% static 'mainApp/image/head_1.jpg' %});
         text-align: center;
         }
+
+
+
+
         @font-face {
             font-family: Chalk_cyrillic_freehand;
             src: url(fonts/Chalk_cyrillic_freehand.eot);
@@ -54,6 +58,25 @@
         margin-left: 30px;
         }
 
+
+        .thumb img {
+            -webkit-filter: grayscale(0);
+            filter: none;
+            border-radius: 5px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 5px;
+        }
+
+        .thumb img:hover {
+            -webkit-filter: grayscale(1);
+            filter: grayscale(1);
+        }
+
+        .thumb {
+            padding: 5px;
+        }
+
     </style>
 
 </head>
@@ -76,25 +99,31 @@
           <div class="dropdown-menu" aria-labelledby="dropdown07">
             <a class="dropdown-item" href="/directory">Методическая литература</a>
             <a class="dropdown-item" href="/link">Полезные сайты</a>
-            <a class="dropdown-item disabled" href="#">Нормативно-правовая база</a>
           </div>
         </li>
           <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="dropdown07" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Родителям</a>
           <div class="dropdown-menu" aria-labelledby="dropdown07">
             <a class="dropdown-item" href="/parents">Полезная информация</a>
+            <a class="dropdown-item" href="/timetable">Наши новости</a>
           </div>
         </li>
           <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="dropdown07" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Ученикам</a>
           <div class="dropdown-menu" aria-labelledby="dropdown07">
-            <a class="dropdown-item" href="/timetable">Расписание уроков</a>
             <a class="dropdown-item" href="/books">Учебная литература</a>
             <a class="dropdown-item" href="/sites">Полезные сайты для изучения английского языка</a>
           </div>
         </li>
+          <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="dropdown07" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Портфолио</a>
+          <div class="dropdown-menu" aria-labelledby="dropdown07">
+            <a class="dropdown-item" href="/portfolio">Обо мне</a>
+            <a class="dropdown-item" href="/portfolio2">Мои достижения</a>
+          </div>
+        </li>
           <li class="nav-item">
-            <a class="nav-link" href="/portfolio">Портфолио<span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="/contact">Обратная связь<span class="sr-only">(current)</span></a>
           </li>
       </ul>
     </div>

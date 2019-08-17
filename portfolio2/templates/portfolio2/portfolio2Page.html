@@ -1,0 +1,44 @@
+{% extends "mainApp/wrapper.html" %}
+{% load staticfiles %}
+
+{% block content %}
+<div class="container fon">
+ <h1><font color="white"><br>Мои достижения<br><br></font></h1>
+</div>
+<br><br>
+<div class="container padding">
+<p class="text-justify" style="text-indent:20px">В настоящий момент основная часть моих свершений связаны главным образом с предыдущим местом работы. Совместно с Беденко О.Г.
+    готовила команду старшеклассников к участию в дебатном турнире "Имею мнение". В 2017 году команда "Молодежка" Алчевской гуманитарной гимназии заняла первое место в Республике.</p>
+    <p class="text-justify" style="text-indent:20px">В 2018 году агитбригада ГБОУ ЛНР "АГГ- Д/С им. П.Н. Липовенко" заняла второе место на Республиканском уровне конкурса агитбригад.</p>
+    <p class="text-justify" style="text-indent:20px">В 2018 учебном году проводилась олимпиада младших школьников, в которой мой ученик Суслов Руслан, стал призером.</p>
+    <p class="text-justify" style="text-indent:20px">В 2018-2019 учебном году учащиеся 5-7 классов принимали участие в Международном конкурсе "Я - лингвист", в котором заняли призовые места.</p>
+    <p class="text-justify" style="text-indent:20px">Восьмиклассница Горбатенко Анна стала призером по результатам предметной олимпиады 2018-2019 учебного года.</p>
+<p class="text-justify" style="text-indent:20px">Конечно, все эти успехи достигнуты благодаря усердию, старанию и таланту детей, с которыми я работала и продолжаю работать.
+    Однако не могу не отметить, что главное достижения любого учителя - это победы детей, которых он воспитывает и обучает, ведь в этих детей вложена его душа.</p>
+
+<p class="text-justify" style="text-indent:20px">Однако, я стараюсь не отставать от своих воспитанников. Весной 2019 года заняла первое место в городском этапе конкурса "Педагог года Луганщины" в номинации "Дебют".</p>
+</div><hr>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4 thumb">
+            <a data-fancybox="gallery" href="{% static 'mainApp/image/g1.jpg' %}">
+                <img class="img-fluid" src="{% static 'mainApp/image/g1.jpg' %}" alt="...">
+            </a>
+        </div>
+        <div class="col-md-4 thumb">
+            <a data-fancybox="gallery" href="{% static 'mainApp/image/g2.jpg' %}">
+                <img class="img-fluid" src="{% static 'mainApp/image/g2.jpg' %}" alt="...">
+            </a>
+        </div>
+        <div class="col-md-4 thumb">
+            <a data-fancybox="gallery" href="{% static 'mainApp/image/g3.jpg' %}">
+                <img class="img-fluid" src="{% static 'mainApp/image/g3.jpg' %}" alt="...">
+            </a>
+        </div>
+
+    </div>
+</div>
+<br>
+
+{% endblock %}

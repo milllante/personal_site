@@ -3,46 +3,59 @@
 
 {% block content %}
 <div class="container fon">
- <h1><font color="white"><br>Мое портфолио<br><br></font></h1>
+ <h1><font color="white"><br>Обо мне<br><br></font></h1>
 </div>
 <br><br>
-  {% for post in object_list %}
-        <div class="container">
-        <table class="table table-border table-hover">
-               <thead>
-                <tr><th style="text-align:center">
-                    <h4>{{post.title}}</h4>
-                </th></tr>
-               </thead>
 
-               <tbody>
-               <tr><td><p class="text-justify">{{post.text|safe|linebreaks}}</p><br><br><br></td></tr>
-               </tbody>
-             </table>
+
+<div class="row padding">
+
+    <div class="col-md-5 center">
+        <div class="left"><img src="{% static 'mainApp/image/ava.jpg' %}" style='max-width:70%; height:auto; display:block' alt="Responsive image" class="img-responsive img-rounded"></div><br><br>
+        <div class="text-center"><h5>Охота Елена Викторовна</h5><p>Учитель английского языка Государственного бюджетного образовательного учреждения
+        Луганской Народной Республики "Алчевская гимназия имени Владимира Николаевича Онуфриенко</p></div><hr><br>
+
+    </div>
+    <div class="col-md-7">
+        <br>
+        <p class="text-justify">Образование: высшее педагогическое</p>
+        <p class="text-justify">В 2016 году поступила в Луганский педагогический университет,
+            в институт последипломного образования на специальность "Язык и литература (английский).
+            В 2019 году окончила университет по ускоренной программе с присвоением квалификации "Специалист"</p>
+        <p class="text-justify">Общий педагогический стаж: с 2016 года (3 года) </p>
+        <p class="text-justify">Педагогический стаж работы по специальности: с 2018 года (1 год)</p>
+        <p class="text-justify">Место работы: ГБОУ ЛНР «Алчевская гимназий им. В.Н. Онуфриенко» с 2018 года
+            Должность: учитель английского языка, классный руководитель 6-А класса</p>
+        <p class="text-justify">Место работы в 2016 – 2018  гг.: ГБОУ ЛНР "АГГ-Д/С им. П. Н. Липовенко"</p>
+        <p class="text-justify">Должность: педагог-организатор, учитель английского языка (0,5 ставки).</p>
+
+        <p class="text-justify">Результаты обучения у детей стабильно высокие: учащихся, имеющих «2», нет.
+            Качество знаний обучающихся по классам составляет в среднем 80% – 85%.
+            На уроках применяю современные методы обучения английскому языку, развивающие образовательные технологии.
+            Работаю над проблемой развития коммуникативных умений учащихся, использую проектную методику, ролевые игры,
+            интерактивные методы и приёмы обучения иностранному языку, что значительно поддерживает и развивает мотивацию
+            к изучению английского языка у учащихся. Считаю, что указанные выше методики позволяют давать высокий
+            уровень знаний, развивать умения и навыки обучающихся.
+</p><br>
+    </div>
+</div>
+
+
+<div class="container">
+    <div class="row padding">
+        <div class="col-md-6 thumb">
+            <a data-fancybox="gallery" href="{% static 'mainApp/image/portfolio2.jpg' %}">
+                <img class="img-fluid" src="{% static 'mainApp/image/portfolio2.jpg' %}" alt="...">
+            </a>
+        </div>
+        <div class="col-md-6 thumb">
+            <a data-fancybox="gallery" href="{% static 'mainApp/image/portfolio3.jpg' %}">
+                <img class="img-fluid" src="{% static 'mainApp/image/portfolio3.jpg' %}" alt="...">
+            </a>
         </div>
 
-  {% endfor %}
-<hr>
-
-<h4>Диплом</h4>
-<div class="row">
-
-    <div class="col-md-6 center">
-       <img src="{% static 'mainApp/image/portfolio2.jpg' %}" style='max-width:95%; height:auto; display:block' alt="Responsive image" class="img-responsive img-rounded">
-    </div>
-    <div class="col-md-6 center">
-       <img src="{% static 'mainApp/image/portfolio3.jpg' %}" style='max-width:95%; height:auto; display:block' alt="Responsive image" class="img-responsive img-rounded">
     </div>
 </div>
 <br>
-<a href="/diploma" type="button" class="btn btn-outline-primary">Просмотреть</a>
-<br><hr>
-<h4>Грамоты</h4>
-<div class="row">
-    <div class="col-md-6 center">
-       <img src="{% static 'mainApp/image/portfolio1.jpg' %}" style='max-width:80%; height:auto; display:block' alt="Responsive image" class="img-responsive img-rounded">
-    </div>
-</div>
-<br><br><br>
 
 {% endblock %}
